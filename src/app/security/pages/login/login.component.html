@@ -1,0 +1,53 @@
+<h1 class="title">
+  Inicia Sesion Y Administra <br />Tu <span class="subtitle">Tienda</span>
+</h1>
+<div class="shadow border p-4 rounded-2">
+  <form autocomplete="off" [formGroup]="frmLogin" (ngSubmit)="Login()">
+    <div class="mt-2">
+      <label class="form-label fw-bold">EMAIL</label>
+      <input
+        id="email"
+        name="emai"
+        class="form-control bg-light"
+        formControlName="email"
+        #email
+      />
+      <div *ngIf="fieldValidator('email')">
+        {{ "Ingresa un email valido!" }}
+      </div>
+    </div>
+
+    <div class="mt-2">
+      <label class="form-label fw-bold">CLAVE</label>
+      <input
+        id="password"
+        name="password"
+        type="password"
+        class="form-control bg-light"
+        #password
+        formControlName="password"
+      />
+      <div *ngIf="fieldValidator('password')">
+        {{ "La contraseña es requerida!" }}
+      </div>
+    </div>
+
+    <div class="mt-3">
+      <button type="submit" class="btn btn-primary w-100">Ingresar</button>
+    </div>
+  </form>
+</div>
+<div class="row mt-2">
+  <div class="col-8">
+    <a routerLink="/Register" class="text-decoration-none text-secondary">
+      ¿No tienes cuenta? Registrate
+    </a>
+  </div>
+  <div class="col-4 text-center">
+    <a
+      class="text-decoration-none text-secondary"
+      routerLink="/PasswordRecovery"
+      >Olvide mi clave</a
+    >
+  </div>
+</div>

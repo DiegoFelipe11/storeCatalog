@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row justify-content-around">
+    <div
+      class="col-lg-4 mt-5 shadow rounded-4 p-4"
+      style="height: 400px; width: 300px"
+      *ngFor="let product of products"
+    >
+      <div>
+        <h5 class="fw-bold">{{ product.name }}</h5>
+        <hr class="w-100 text-danger" />
+        <div class="text-center">
+          <img
+            src="{{ product.imageUrl }}"
+            class="rounded"
+            style="width: 100px; height: 100px"
+            alt="Logo"
+          />
+        </div>
+
+        <hr class="w-100 text-danger" />
+        <p class="text-secondary mt-1 fw-bold">
+          {{ product.description }}
+        </p>
+
+        <div class="footer">
+          <ul>
+            <li class="text-secondary">Precio : ${{ product.price }}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

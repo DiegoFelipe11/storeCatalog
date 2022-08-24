@@ -1,0 +1,72 @@
+<h1 class="title">
+  Crea Una Cuenta Y Administra <br />Tu <span class="subtitle">Tienda</span>
+</h1>
+<div class="shadow border p-4 rounded-2">
+  <form
+    autocomplete="off"
+    [formGroup]="frmRegister"
+    (ngSubmit)="registerAcoount()"
+  >
+    <div class="mt-2">
+      <label class="form-label fw-bold">NOMBRES</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        class="form-control bg-light"
+        #name
+        formControlName="name"
+      />
+      <div *ngIf="fieldValidator('name')">
+        {{ "El nombre es requerido!" }}
+      </div>
+    </div>
+    <div class="mt-2">
+      <label class="form-label fw-bold">EMAIL</label>
+      <input
+        type="email"
+        id="email"
+        name="emai"
+        class="form-control bg-light"
+        #email
+        formControlName="email"
+      />
+      <div *ngIf="fieldValidator('email')">
+        {{ "Ingresa un email valido!" }}
+      </div>
+    </div>
+
+    <div class="mt-2">
+      <label class="form-label fw-bold">CLAVE</label>
+      <input
+        id="password"
+        type="password"
+        name="password"
+        class="form-control bg-light"
+        #password
+        formControlName="password"
+      />
+      <div *ngIf="fieldValidator('password')">
+        {{ "La clave es  requerida!" }}
+      </div>
+    </div>
+
+    <div class="mt-3">
+      <button type="submit" class="btn btn-primary w-100">Registrarse</button>
+    </div>
+  </form>
+</div>
+<div class="row mt-2">
+  <div class="col-8">
+    <a routerLink="/Login" class="text-decoration-none text-secondary"
+      >¿Ya tienes cuenta? Inicia sesion</a
+    >
+  </div>
+  <div class="col-4 text-center">
+    <a
+      class="text-decoration-none text-secondary"
+      routerLink="/PasswordRecovery"
+      >Olvide mi clave</a
+    >
+  </div>
+</div>
