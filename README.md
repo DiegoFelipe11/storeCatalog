@@ -1,6 +1,6 @@
 # StoreCatalog
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+Este proyecto se crea un catalogo de productos para tiendas,donde se listaran productos con su respectiva informacion e imagen por otro lado  el diseño es responsivo y se realizaron algunas pruebas con una cobertura del 60%
 
 ## Development server
 
