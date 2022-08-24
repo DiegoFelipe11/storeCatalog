@@ -2,9 +2,15 @@
 
 Este proyecto se crea un catalogo de productos para tiendas,donde se listaran productos con su respectiva informacion e imagen por otro lado  el diseño es responsivo y se realizaron algunas pruebas con una cobertura del 60%
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Instrucciones para ejecutar el programa
+1. Clone el repositorio
++ git clone https://github.com/DiegoFelipe11/storeCatalog/
+
+2. Abra el proyecto en editor de su preferencia
+
+3. Ejecute el terminarl npm run dev
+
 
 ## Code scaffolding
 
