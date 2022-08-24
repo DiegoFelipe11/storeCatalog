@@ -9,7 +9,8 @@ Este proyecto se crea un catalogo de productos para tiendas,donde se listaran pr
 
 2. Abra el proyecto en editor de su preferencia
 
-3. Ejecute el terminarl npm run dev
+3. Ejecute en la terminal npm run server
+4. Ejecute en la terminal npm start
 
 
 ## Code scaffolding
